@@ -1,0 +1,18 @@
+# Configurações e arquivos sensíveis
+.env
+.env.*
+!.env.example
+
+# Dependências
+/vendor/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/

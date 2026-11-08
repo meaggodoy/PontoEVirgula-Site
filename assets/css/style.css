@@ -1,0 +1,216 @@
+/*Geral*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: 'Manrope';
+}
+
+.img_logo {
+    display: block;
+    width: 250px;
+}
+
+.button {
+    width: fit-content;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button.primary {
+    background-color: #8A4939;
+    color: #F0E1C9;
+    letter-spacing: 0.15em;
+
+    border: none;
+    border-radius: 3px;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #F0E1C9;
+    letter-spacing: 0.15em;
+
+    border: #F0E1C9 solid 1px;
+    border-radius: 3px;
+}
+
+.button.tertiary  {
+    background-color: transparent;
+    color: #67343A;
+    letter-spacing: 0.15em;
+
+    border: #67343A solid 1px;
+    border-radius: 3px;
+}
+
+.button.quaternary {
+    background-color: #cf5660;
+    color: #F0E1C9;
+    letter-spacing: 0.15em;
+
+    border: none;
+    border-radius: 3px;
+}
+
+.link {
+    width: fit-content;
+    padding-bottom: 1vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    transform: translateX(4px);
+}
+
+.link.primary {
+    border-bottom: #67343A;
+    color: #67343A;
+}
+
+.link.secondary {
+    border-bottom: #F0E1C9;
+    color: #F0E1C9;
+}
+
+.link.tertiary {
+    color: #302622;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: #F0E1C9;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_nav {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_nav_ul {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    letter-spacing: 0.25em;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    li a {
+        letter-spacing: 0.1em;
+        color: #302622;
+        transition: all 0.5s ease;
+    }
+
+    li a:hover {
+        text-shadow: 0.5px 0 0 #302622, -0.5px 0 0 #302622;
+    }
+}
+
+/*Footer*/
+.footer {
+    box-sizing: border-box;
+    padding: 4em 3em 1em;
+    width: 100%;
+    height: 60vh;
+
+    background-color: #67343A;
+    color: #F0E1C9;
+}
+
+.footer_section {
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_article_info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer_article_info_div {
+    width: fit-content;
+
+    h5 {
+        color: #cf5660;
+    }
+}
+
+.footer_article_ul {
+    li a {
+        letter-spacing: 0.1em;
+        color: #F0E1C9;
+        transition: all 0.5s ease;
+    }
+
+    li a:hover {
+        text-shadow: 0.5px 0 0 #F0E1C9, -0.5px 0 0 #F0E1C9;
+    }
+}
+
+.espacamento_footer {
+    padding-bottom: 1.5em;
+}
+
+.footer_section_fim {
+    padding-top: 1em;
+    height: 10%;
+    border-top: #F0E1C9 solid 0.1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    letter-spacing: 0.15em;
+    font-size: 0.7rem;
+}
+
+.footer_article_div_redes {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon_redes {
+    width: 24px;
+    padding: 5px;
+    border: #F0E1C9 solid 1px;
+    border-radius: 50%;
+}
