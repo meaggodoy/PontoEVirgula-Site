@@ -16,13 +16,17 @@
     width: 250px;
 }
 
+.fonte_titulo {
+    font-family: 'Cormorant Garamond';
+}
+
 .button {
-    width: fit-content;
+    min-width: fit-content;
     padding: 1vw;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 12px;
     align-items: center;
 
     font-weight: 600;
@@ -213,4 +217,15 @@
     padding: 5px;
     border: #F0E1C9 solid 1px;
     border-radius: 50%;
+}
+
+/*Páginas*/
+.section_article_info {
+    padding: 8em 5em;
+    width: 40vw;
+    min-height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }

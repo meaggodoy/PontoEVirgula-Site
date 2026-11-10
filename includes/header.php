@@ -17,7 +17,7 @@
                 <li><a href="../pages/sobre_nos.php">SOBRE NÓS</a></li>
             </ul>
             <button class="button primary">
-                <img src="" alt="">
+                <img src="assets/img/user.png" alt="">
                 <p>Entrar</p>
             </button>
         </nav>
