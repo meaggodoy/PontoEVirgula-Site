@@ -14,10 +14,10 @@
         <!--Hero-->
         <section>
             <article class="section_article_info hero">
-                <p class="section_tag">--- Livraria independente & café</p>
-                <h1 class="fonte_titulo">Uma pausa antes do próximo capítulo.</h1>
+                <p class="section_tag">----- Livraria independente & café</p>
+                <h1 class="fonte_titulo hero">Uma pausa antes do próximo capítulo.</h1>
                 <p>Livros escolhidos com afeto, café passado sem pressa e um lugar para deixar o mundo lá fora por algumas páginas.</p>
-                <div class="secction_article_buttons">
+                <div class="section_article_buttons">
                     <button class="button primary">
                         <p>Conheça nossa curadoria</p>
                         <span>→</span>
@@ -27,7 +27,7 @@
                     </button>
                 </div>
             </article>
-            <img src="" alt="">
+            <img src="assets/img/pontovirgulahero.jpg" alt="">
         </section>
 
         <!--Leituras recomendadas-->
@@ -44,11 +44,11 @@
                 <p>Grãos de pequenos produtores, quitutes artesanais e receitas que têm gosto de casa. Nosso café nasceu para ser o intervalo perfeito - ou o começo de uma longa tarde entre livros.</p>
                 <div class="section_article_div">
                     <div class="section_article_div_info">
-                        <h4 class="fonte_titulo">100%</h4>
+                        <h4 class="fonte_titulo div">100%</h4>
                         <p>Café brasileiro</p>
                     </div>
                     <div class="section_article_div_info">
-                        <h4 class="fonte_titulo">Feito aqui</h4>
+                        <h4 class="fonte_titulo div">Feito aqui</h4>
                         <p>Bolos e quitutes</p>
                     </div>
                 </div>

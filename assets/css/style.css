@@ -18,6 +18,15 @@
 
 .fonte_titulo {
     font-family: 'Cormorant Garamond';
+    font-size: xxx-large;
+}
+
+.fonte_titulo.hero {
+    font-size: 4.3em;
+}
+
+.fonte_titulo.div {
+    font-size: xx-large;
 }
 
 .button {
@@ -228,4 +237,38 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.section_article_info.hero {
+    background-color: #67343A;
+    background: linear-gradient(
+    90deg, 
+    #67343A 0%, 
+    #67343A 25%, 
+    rgba(103, 52, 58, 0.85) 45%, 
+    rgba(103, 52, 58, 0) 75%
+  );
+}
+
+.section_article_buttons {
+    width: 100%;
+    margin: 1em 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_article_div {
+    width: 100%;
+    margin: 2em 0;
+    padding: 1em 0;
+    border-top: #302622 solid 1px;
+    border-bottom: #302622 solid 1px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    align-items: center;
 }
