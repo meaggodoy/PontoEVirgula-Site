@@ -23,10 +23,35 @@
 
 .fonte_titulo.hero {
     font-size: 4.3em;
+
+    span {
+        font-style: italic;
+        color: #eba4a4;
+        font-family: 'Cormorant Garamond';
+        font-weight: 500;
+    }
 }
 
 .fonte_titulo.div {
     font-size: xx-large;
+}
+
+.fonte_titulo.livro {
+    font-size: x-large;
+}
+
+.section_tag {
+    color: #ad7f61;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+}
+
+.input_form {
+    width: 25vw;
+    height: 7vh;
+    border: #67343A solid 1px;
+    border-radius: 5px;
 }
 
 .button {
@@ -79,12 +104,12 @@
 }
 
 .link {
-    width: fit-content;
+    min-width: fit-content;
     padding-bottom: 1vw;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 5px;
     align-items: center;
 
     font-weight: 600;
@@ -98,12 +123,12 @@
 }
 
 .link.primary {
-    border-bottom: #67343A;
-    color: #67343A;
+    border-bottom: #8A4939 solid 1px;
+    color: #8A4939;
 }
 
 .link.secondary {
-    border-bottom: #F0E1C9;
+    border-bottom: #F0E1C9 solid 1px;
     color: #F0E1C9;
 }
 
@@ -229,25 +254,34 @@
 }
 
 /*Páginas*/
+.section_info {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_info.hero {
+    color: #F0E1C9;
+    background-color: #67343A;
+
+    img {
+        width: 45vw;
+    }
+}
+
 .section_article_info {
     padding: 8em 5em;
-    width: 40vw;
+    width: 45vw;
     min-height: fit-content;
 
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-.section_article_info.hero {
-    background-color: #67343A;
-    background: linear-gradient(
-    90deg, 
-    #67343A 0%, 
-    #67343A 25%, 
-    rgba(103, 52, 58, 0.85) 45%, 
-    rgba(103, 52, 58, 0) 75%
-  );
 }
 
 .section_article_buttons {
@@ -271,4 +305,95 @@
     flex-direction: row;
     gap: 30%;
     align-items: center;
+}
+
+.section_info.cafe {
+    height: 110vh;
+    background-color: #e2c4b2;
+
+    img {
+        width: 45vw;
+    }
+}
+
+.section_info.historia {
+    background-color: #67343A;
+    color: #F0E1C9;
+
+    img {
+        width: 25vw;
+        padding-left: 15vw;
+    }
+}
+
+.section_carta {
+    width: 100%;
+    height: fit-content;
+    padding: 8em 0;
+    color: #67343A;
+    background-color: #eba9a9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+
+    p {
+        width: 40%;
+        text-align: center;
+    }
+}
+
+.section_form_carta {
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section_livro {
+    width: 100%;
+    height: fit-content;
+    padding: 8em 5em;
+    color: #67343A;
+    background-color: #F0E1C9;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.section_livro_header {
+    text-align: center;
+}
+
+.section_article_livros {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5em;
+}
+
+.card_livro {
+    width: 100%;
+    height: fit-content;
+    padding: 1em 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    text-align: left;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        border-top: #67343A solid 1px;
+        padding: 1em 0;
+        margin-top: 1em;
+    }
 }
