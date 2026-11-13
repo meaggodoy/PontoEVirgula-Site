@@ -1,3 +1,15 @@
+<?php
+require_once 'includes/conexao.php';
+
+$sql = "SELECT id_livro, titulo, autor, preco, capa
+        FROM livros
+        WHERE destaque = 1 AND ativo = 1
+        LIMIT 4";
+
+$stmt = $pdo->query($sql);
+$livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -36,59 +48,36 @@
                 <p class="section_tag">Escolhas da casa</p>
                 <h1 class="fonte_titulo hero">Livros para ler sem pressa</h1>
                 <p>Uma seleção feita por quem acredita que o livro certo sempre encontra o seu leitor.</p>
-            </div>
+            </div>            
             <article class="section_article_livros">
-                <div class="card_livro">
-                    <img src="" alt="">
-                    <h4 class="fonte_titulo livro">A elegância do ouriço</h4>
-                    <p>Muriel Barbery</p>
-                    <div>
-                        <p>R$ 59,90</p>
-                        <a class="link tertiary" href="">
-                            <p>Ver livro</p>
-                            <span>→</span>
-                        </a>
+                <?php foreach ($livros as $livro): ?>
+                    <div class="card_livro">
+                        <?php if (!empty($livro['capa'])): ?>
+                            <img
+                                src="<?= htmlspecialchars($livro['capa']) ?>"
+                                alt="Capa de <?= htmlspecialchars($livro['titulo']) ?>"
+                            >
+                        <?php endif; ?>
+                        <h4 class="fonte_titulo livro">
+                            <?= htmlspecialchars($livro['titulo']) ?>
+                        </h4>
+                        <p><?= htmlspecialchars($livro['autor']) ?></p>
+                        <div>
+                            <p>
+                                R$ <?= number_format($livro['preco'], 2, ',', '.') ?>
+                            </p>
+                            <a class="link tertiary" href="livro.php?id=<?= $livro['id_livro'] ?>">
+                                <p>Ver livro</p>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="card_livro">
-                    <img src="" alt="">
-                    <h4 class="fonte_titulo livro">A biblioteca da meia-noite</h4>
-                    <p>Matt Haig</p>
-                    <div>
-                        <p>R$ 54,90</p>
-                        <a class="link tertiary" href="">
-                            <p>Ver livro</p>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card_livro">
-                    <img src="" alt="">
-                    <h4 class="fonte_titulo livro">Dias de abandono</h4>
-                    <p>Elena Ferrante</p>
-                    <div>
-                        <p>R$ 49,90</p>
-                        <a class="link tertiary" href="">
-                            <p>Ver livro</p>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card_livro">
-                    <img src="" alt="">
-                    <h4 class="fonte_titulo livro">O livro do desasossego</h4>
-                    <p>Fernando Pessoa</p>
-                    <div>
-                        <p>R$ 64,90</p>
-                        <a class="link tertiary" href="">
-                            <p>Ver livro</p>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </article>
             <a href="" class="link primary">
-                <p>Ver todos os livros</p>
+                <p>
+                    Ver todos os livros
+                </p>
                 <span>→</span>
             </a>
         </section>
