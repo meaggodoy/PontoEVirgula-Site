@@ -11,6 +11,10 @@
     font-family: 'Manrope';
 }
 
+main {
+    background-color: #F0E1C9;
+}
+
 .img_logo {
     display: block;
     width: 250px;
@@ -37,7 +41,10 @@
 }
 
 .fonte_titulo.livro {
-    font-size: x-large;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    min-height: 2.4em;
+    margin: 0;
 }
 
 .section_tag {
@@ -48,10 +55,11 @@
 }
 
 .input_form {
-    width: 25vw;
+    width: 100%;
     height: 7vh;
     border: #67343A solid 1px;
     border-radius: 5px;
+    padding-left: 1em;
 }
 
 .button {
@@ -65,6 +73,10 @@
 
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button.primary {
@@ -141,6 +153,7 @@
     width: 100%;
     height: 15vh;
     background-color: #F0E1C9;
+    border-bottom: #d4be9d solid 1px;
 
     display: flex;
     flex-direction: row;
@@ -344,12 +357,14 @@
     }
 }
 
-.section_form_carta {
-    width: 40%;
-
+.section_form {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 2em;
+}
+
+.section_form.carta {
+    width: 40%;
 }
 
 .section_livro {
@@ -375,6 +390,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5em;
+    align-items: stretch;
 }
 
 .card_livro {
@@ -391,9 +407,66 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 0.5em;
 
         border-top: #67343A solid 1px;
         padding: 1em 0;
-        margin-top: 1em;
+        margin-top: auto;
     }
+}
+
+.card_capa_livro {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.section_titulo {
+    padding: 3em 5em;
+    color: #67343A;
+}
+
+.article_form {
+    padding: 2em 0;
+    width: 100%;
+}
+
+.section_livro.catalogo {
+    padding: 0 5em;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.paginacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 3em 0;
+}
+
+.paginacao > span {
+    font-size: 0.9em;
+}
+
+.paginacao_numeros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+}
+
+.paginacao_numeros a {
+    text-decoration: none;
+    color: #67343A;
+    padding: 0.6em 0.9em;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.paginacao_numeros a:hover, .paginacao_numeros .pagina_ativa {
+    background-color: #67343A;
+    color: #F0E1C9;
+    border-color: #67343A;
 }

@@ -9,21 +9,21 @@
     <footer class="footer">
         <section class="footer_section">
             <article class="footer_article_sobre">
-                <img src="assets/img/logo_clara.png" alt="Logo Ponto;Vírgula: Livros & Café." class="img_logo espacamento_footer">
+                <img src="/PontoEVirgula-Site/assets/img/logo_clara.png" alt="Logo Ponto;Vírgula: Livros & Café." class="img_logo espacamento_footer">
                 <p class="espacamento_footer">Uma livraria independente, um café acolhedor e muitas histórias esperando por você.</p>
                 <div class="footer_article_div_redes espacamento_footer">
-                    <img src="assets/img/instagram.png" alt="Instagram" class="icon_redes">
-                    <img src="assets/img/whatsapp.png" alt="WhatsApp" class="icon_redes">
+                    <img src="/PontoEVirgula-Site/assets/img/instagram.png" alt="Instagram" class="icon_redes">
+                    <img src="/PontoEVirgula-Site/assets/img/whatsapp.png" alt="WhatsApp" class="icon_redes">
                 </div>
             </article>
             <article class="footer_article_info">
                 <div class="footer_article_info_div">
                     <h5 class="espacamento_footer">Navegue</h5>
                     <ul class="footer_article_ul">
-                        <li class="espacamento_footer"><a href="../pages/catalogo.php">Livros</a></li>
-                        <li class="espacamento_footer"><a href="../pages/cafeteria.php">Café</a></li>
-                        <li class="espacamento_footer"><a href="../pages/encontros.php">Encontros</a></li>
-                        <li class="espacamento_footer"><a href="../pages/sobre_nos.php">Sobre nós</a></li>
+                        <li class="espacamento_footer"><a href="/PontoEVirgula-Site/pages/catalogo.php">Livros</a></li>
+                        <li class="espacamento_footer"><a href="/PontoEVirgula-Site/pages/cafeteria.php">Café</a></li>
+                        <li class="espacamento_footer"><a href="/PontoEVirgula-Site/pages/encontros.php">Encontros</a></li>
+                        <li class="espacamento_footer"><a href="/PontoEVirgula-Site/pages/sobre_nos.php">Sobre nós</a></li>
                     </ul>
                 </div>
                 <div class="footer_article_info_div">

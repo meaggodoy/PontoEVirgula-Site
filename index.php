@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/conexao.php';
+require_once __DIR__ . '/includes/conexao.php';
 
 $sql = "SELECT id_livro, titulo, autor, preco, capa
         FROM livros
@@ -20,7 +20,7 @@ $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
+    <?php require_once __DIR__ . '/includes/header.php'; ?>
 
     <main>
         <!--Hero-->
@@ -53,7 +53,7 @@ $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach ($livros as $livro): ?>
                     <div class="card_livro">
                         <?php if (!empty($livro['capa'])): ?>
-                            <img
+                            <img class="card_capa_livro"
                                 src="<?= htmlspecialchars($livro['capa']) ?>"
                                 alt="Capa de <?= htmlspecialchars($livro['titulo']) ?>"
                             >
@@ -74,7 +74,7 @@ $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </div>
                 <?php endforeach; ?>
             </article>
-            <a href="" class="link primary">
+            <a href="/PontoEVirgula-Site/pages/catalogo.php" class="link primary">
                 <p>
                     Ver todos os livros
                 </p>
@@ -135,13 +135,13 @@ $livros = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h2 class="fonte_titulo">Cartas da Ponto;Vírgula</h2>
             <p>Recomendação de leitura, novidades da casa e convites para os nossos encontros direto na sua caixa de entrada.</p>
 
-            <form action="" class="section_form_carta">
-                <input class="input_form" type="email" id="email_carta" name="email_carta">
+            <form action="" class="section_form carta">
+                <input class="input_form" type="email" id="email_carta" name="email_carta" placeholder="Digite aqui seu e-mail">
                 <button class="button quaternary">Quero receber</button>
             </form>
         </section>
     </main>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>
