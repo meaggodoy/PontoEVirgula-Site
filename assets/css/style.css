@@ -323,6 +323,11 @@ main {
 .section_info.cafe {
     height: 110vh;
     background-color: #e2c4b2;
+    color: #302622;
+
+    h2 {
+        color: #67343A;
+    }
 
     img {
         width: 45vw;
